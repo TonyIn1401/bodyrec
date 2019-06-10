@@ -1,0 +1,39 @@
+/* miniprogram/pages/record/record.wxss */
+.placeholder{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #EBEBEB;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #cfcfcf;
+}
+
+.rec_person{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #00e6b8;
+    color: #00997a;
+}
+
+.flex_desc{
+  margin-top: 5px;
+  color: #888888;
+  text-align: left;
+  font-size: 14px;
+  padding: 0 10px;
+  
+}
+
+.left_align{
+  text-align: left;  
+  flex-grow: 1;
+}
+
+.left_align_value{
+  text-align: left;  
+  flex-grow: 1;
+}
+
+

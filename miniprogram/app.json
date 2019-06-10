@@ -1,5 +1,6 @@
 {
-  "pages": [
+  "pages": [    
+    "pages/record/record",
     "pages/index/index",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
@@ -7,7 +8,8 @@
     "pages/addFunction/addFunction",
     "pages/deployFunctions/deployFunctions",
     "pages/chooseLib/chooseLib",
-    "pages/openapi/openapi"
+    "pages/openapi/openapi",
+    "pages/height/height"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -15,6 +17,29 @@
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "云开发 QuickStart",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/record/record",
+        "iconPath": "images/rec.png",
+        "selectedIconPath": "images/rec_ac.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/type.png",
+        "selectedIconPath": "images/type_ac.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine_ac.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }
