@@ -1,85 +1,88 @@
 <!--miniprogram/pages/record/record.wxml-->
+<cu-custom bgColor="{{bgcolor}} light">
+  <view slot="content">Body Rec</view>
+</cu-custom>
 <view class="page">
-  <view class="page__hd">
-    <view class="weui-flex">
-      <view class="weui-flex__item page__title">每日记录</view>
-    </view>
-  </view>
-  <view class="page__bd page__bd_spacing">
-    <view class="weui-flex">
-      <view class="weui-flex__item">
+  <view class="page__bd padding">
+    <view class="flex">
+      <view class="flex-sub">
         <view class="flex_desc">今日概览</view>
-        <view class="rec_person">
-          <view class="weui-flex">
-            <view class="weui-flex__item left_align">身高：</view>
-            <view class="weui-flex__item left_align">183cm</view>
-            <view class="weui-flex__item left_align">184cm</view>
-            <view class="weui-flex__item left_align">+1cm</view>
+        <view class="padding-xl radius shadow-warp {{bgcolor}} light margin-top margin-bottom">
+          <view class="flex">
+            <view class="flex-sub left_align">身高：</view>
+            <view class="flex-sub left_align">183cm</view>
+            <view class="flex-sub left_align">184cm</view>
+            <view class="flex-sub left_align">+1cm</view>
           </view>
-          <view class="weui-flex">
-            <view class="weui-flex__item left_align">体重：</view>
-            <view class="weui-flex__item left_align">70.5kg</view>
-            <view class="weui-flex__item left_align">70.9kg</view>
-            <view class="weui-flex__item left_align">+0.4kg</view>
+          <view class="flex">
+            <view class="flex-sub left_align">体重：</view>
+            <view class="flex-sub left_align">70.5kg</view>
+            <view class="flex-sub left_align">70.9kg</view>
+            <view class="flex-sub left_align">+0.4kg</view>
           </view>
-          <view class="weui-flex">
-            <view class="weui-flex__item left_align">体温：</view>
-            <view class="weui-flex__item left_align">36.5℃</view>
-            <view class="weui-flex__item left_align">36.5℃</view>
-            <view class="weui-flex__item left_align">+0℃</view>
+          <view class="flex">
+            <view class="flex-sub left_align">体温：</view>
+            <view class="flex-sub left_align">36.5℃</view>
+            <view class="flex-sub left_align">36.5℃</view>
+            <view class="flex-sub left_align">+0℃</view>
           </view>
-          <view class="weui-flex">
-            <view class="weui-flex__item left_align">行走：</view>
-            <view class="weui-flex__item left_align">8.3km</view>
-            <view class="weui-flex__item left_align">11.8km</view>
-            <view class="weui-flex__item left_align">+3.5km</view>
+          <view class="flex">
+            <view class="flex-sub left_align">行走：</view>
+            <view class="flex-sub left_align">8.3km</view>
+            <view class="flex-sub left_align">11.8km</view>
+            <view class="flex-sub left_align">+3.5km</view>
           </view>
         </view>
       </view>
     </view>
-    <view class="weui-flex">
-      <view class="weui-flex__item">
-        <view class="weui-cells__title">点击跳转到详情界面</view>
+    <view class="flex">
+      <view class="flex-sub">
+        <view class="flex_desc">点击跳转到详情界面</view>
       </view>
     </view>
-    <view class="weui-flex">
-      <view class="weui-flex__item">
-        <navigator url="" class="weui-cell weui-cell_access" url='../height/height' hover-class="weui-cell_active">
-          <view class="weui-cell__bd">身高</view>
-          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-        </navigator>
+    <view class="flex">
+        <view class="flex-sub radius shadow {{bgcolor}} light margin-top">
+          <navigator class="weui-cell weui-cell_access" url='../height/height' hover-class="weui-cell_active">
+          <view class="cuIcon-clothes text-cyan"></view>
+            <view class="weui-cell__bd">身高</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+          </navigator>
       </view>
     </view>
-    <view class="weui-flex">
-      <view class="weui-flex__item">
-        <navigator url="" class="weui-cell weui-cell_access" url='../index/index' open-type="switchTab" hover-class="weui-cell_active">
-          <view class="weui-cell__bd">体重</view>
-          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-        </navigator>
+    <view class="flex">
+      <view class="flex-sub radius shadow {{bgcolor}} light margin-top-sm">
+          <navigator url="" class="weui-cell weui-cell_access" url='../index/index' open-type="switchTab" hover-class="weui-cell_active">
+          <view class="cuIcon-pay text-cyan"></view>
+            <view class="weui-cell__bd">体重</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+          </navigator>
       </view>
     </view>
-    <view class="weui-flex">
-      <view class="weui-flex__item">
-        <navigator url="" class="weui-cell weui-cell_access" url='../index/index' open-type="switchTab" hover-class="weui-cell_active">
-          <view class="weui-cell__bd">腰围</view>
-          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-        </navigator>
+    <view class="flex">
+      <view class="flex-sub radius shadow {{bgcolor}} light margin-top-sm">
+          <navigator url="" class="weui-cell weui-cell_access" url='../index/index' open-type="switchTab" hover-class="weui-cell_active">
+          <view class="cuIcon-attention text-cyan"></view>
+            <view class="weui-cell__bd">腰围</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+          </navigator>
       </view>
     </view>
-    <view class="weui-flex">
-      <view class="weui-flex__item">
-        <navigator url="" class="weui-cell weui-cell_access" url='../index/index' open-type="switchTab" hover-class="weui-cell_active">
-          <view class="weui-cell__bd">体温</view>
-          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-        </navigator>
+    <view class="flex">
+      <view class="flex-sub radius shadow {{bgcolor}} light margin-top-sm">
+          <navigator url="" class="weui-cell weui-cell_access" url='../index/index' open-type="switchTab" hover-class="weui-cell_active">
+          <view class="cuIcon-titles text-cyan"></view>
+            <view class="weui-cell__bd">体温</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+          </navigator>
       </view>
     </view>
-    <view class="weui-flex">
-      <view class="weui-flex__item">
-        <navigator url="" class="weui-cell weui-cell_access" url='../index/index' open-type="switchTab" hover-class="weui-cell_active">
-          <view class="weui-cell__bd">行走</view>
-          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-        </navigator>
+    <view class="flex">
+      <view class="flex-sub radius shadow {{bgcolor}} light margin-top-sm">
+          <navigator url="" class="weui-cell weui-cell_access" url='../index/index' open-type="switchTab" hover-class="weui-cell_active">
+            <view class="cuIcon-footprint text-cyan"></view>
+            <view class="weui-cell__bd">行走</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+          </navigator>
       </view>
     </view>
   </view>

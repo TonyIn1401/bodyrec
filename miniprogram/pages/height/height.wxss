@@ -1,1 +1,74 @@
 /* miniprogram/pages/height/height.wxss */
+/* 日历 */
+.calendar {
+    background-color:rgb(94, 185, 94, 0.4);  
+    padding-top: 10px; 
+}
+.calendar-header{
+  font-size: small;
+  color: rgb(94, 185, 94);
+}
+.calendar-board{
+  color: rgb(94, 185, 94, 0.4);
+   font-weight: bold;
+}
+
+.calendar-box {
+    display: flex;
+    align-items: center;
+    border-radius: 20rpx 20rpx;
+    margin-top: 5rpx;
+    color: white;
+    background-image: linear-gradient(to bottom, #00FFFF 0%, #00D6D6 50%, #00BFBF 100%);
+    box-shadow: 0rpx 10rpx 30rpx #009696;
+}
+
+.calendar-box .left {
+    width: 30%;
+    text-align: center;
+}
+
+.calendar-box .left .today {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;    
+    background-color: #009696;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.calendar-box .left .today p {
+    font-size: 2rem;    
+}
+
+.calendar-box .left .today .monthStr {
+    font-size: 0.8rem;
+}
+
+.calendar-box .right {
+    width: 70%;
+    font-size: 12px;
+}
+
+.calendar-box .right .box {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.demo2 {
+    background-image: linear-gradient(to bottom, #2e5d91 0%, #2f3e79 100%);
+    padding-top: 10px;
+    padding-bottom: 10px;    
+}

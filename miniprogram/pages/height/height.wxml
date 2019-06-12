@@ -1,30 +1,20 @@
 <!--miniprogram/pages/height/height.wxml-->
+<cu-custom bgColor="{{bgcolor}} light" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">Height Rec</view>
+</cu-custom>
 <view class="page">
-  <view class="page__hd">
-    <view class="weui-flex">
-      <view class="weui-flex__item page__title">记录身高</view>
+  <view class="page__bd padding">
+      <view class="calendar-box">
+        <view class="left">
+          <view class="today" bindtap=''>
+            <text>{{dayStyle[1].day}}</text>
+            <text class="monthStr">{{curMonth}}月</text>
+          </view>
+        </view>
+        <view class="right">
+          <calendar header="{{false}}" weeks-type="cn" header="true" cell-size="30" days-color="{{dayStyle}}" active-type="square" binddayClick="dayClick" bindnextMonth="nextMonthClick"   bindprevMonth="prevMonthClick" />
+        </view>
     </view>
-  </view>
-  <view class="page__bd page__bd_spacing">
-    <view class="weui-flex">
-      <view class="weui-flex__item">
-        <view class="weui-label">日期</view>
-      </view>
-      <view class="weui-flex__item">
-        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
-          <view class="weui-input"></view>
-        </picker>
-      </view>
-      </view>
-      <view class="weui-flex">
-        <view class="weui-flex__item">
-          <view class="weui-label">身高</view>
-        </view>
-        <view class="weui-flex__item">
-          <picker mode="multiSelector" range="{{arrayData}}" bindchange="bindTimeChange">
-            <view class="weui-input"></view>
-          </picker>
-        </view>
-      </view>
   </view>
 </view>

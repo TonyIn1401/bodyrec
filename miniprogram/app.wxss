@@ -1,5 +1,16 @@
 /**app.wxss**/
+@import "colorui/main.wxss";
+@import "colorui/icon.wxss";
 @import 'style/weui.wxss';
+.flex_desc{
+  margin-top: 5px;
+  color: #888888;
+  text-align: left;
+  font-size: 14px;
+  padding: 0 0px;
+  
+}
+
 .container {
   display: flex;
   flex-direction: column;
