@@ -1,0 +1,45 @@
+/* components/ruller.wxss */
+.demo{
+  padding: 20px;
+}
+
+button{
+  padding: 2px 5px;
+  margin: 5px;
+  margin-left: 0;
+}
+
+.canvasHigh {
+    width: 300px;
+    height: 150px;
+    transform: translateX(-200%);
+}
+.canvas_img{
+    width: 300px;
+    height: 150px;
+}
+
+.ruller_view{
+  position: relative;
+}
+
+.canvas_ruller{
+  width: 300rpx;
+  height: 100rpx;
+}
+
+.pointer{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20rpx;
+  margin: auto;
+  width: 0px;
+  border:1px #0475f7 solid;
+  z-index: 999;
+}
+.text_show{
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 12;
+}

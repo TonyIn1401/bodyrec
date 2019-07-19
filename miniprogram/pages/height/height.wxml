@@ -5,16 +5,23 @@
 </cu-custom>
 <view class="page">
   <view class="page__bd padding">
-      <view class="calendar-box">
-        <view class="left">
-          <view class="today" bindtap=''>
-            <text>{{dayStyle[1].day}}</text>
-            <text class="monthStr">{{curMonth}}月</text>
-          </view>
+    <view class="calendar-box shadow-warp" >
+      <view class="left">
+        <view class="today" bindtap=''>
+          <text class="monthStr">{{curMonth}}月</text>
+          <text>{{dayStyle[1].day}}日</text>
         </view>
-        <view class="right">
-          <calendar header="{{false}}" weeks-type="cn" header="true" cell-size="30" days-color="{{dayStyle}}" active-type="square" binddayClick="dayClick" bindnextMonth="nextMonthClick"   bindprevMonth="prevMonthClick" />
-        </view>
+      </view>
+      <view class="right">
+        <calendar header="{{false}}" weeks-type="cn" header="true" cell-size="30" days-color="{{dayStyle}}" active-type="square" binddayClick="dayClick" bindnextMonth="nextMonthClick" bindprevMonth="prevMonthClick" />
+      </view>
     </view>
+    <!--<text>身高{{value}}</text>
+    <view class='wrap'>
+      <scale min="50" max="200" int="{{true}}" step="1" fiexNum="60" single="10" h="60" styles="{{styles[1]}}" bindvalue="bindvalue"></scale>
+    </view>-->
+    <scale min="50" max="200" int="{{true}}" step="1" fiexNum="60" single="10" h="60" styles="{{styles[1]}}" bindvalue="bindvalue"></scale>
+    <ruller scaleLineColor="#44b8b2" scaleTextColor="#44b8b2"></ruller>
   </view>
+
 </view>

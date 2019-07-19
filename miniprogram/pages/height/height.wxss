@@ -18,9 +18,8 @@
     align-items: center;
     border-radius: 20rpx 20rpx;
     margin-top: 5rpx;
-    color: white;
-    background-image: linear-gradient(to bottom, #00FFFF 0%, #00D6D6 50%, #00BFBF 100%);
-    box-shadow: 0rpx 10rpx 30rpx #009696;
+    color: #44b8b2;
+    background-image: linear-gradient(to bottom, #d2f1f0 0%,  #cce6ff 100%);
 }
 
 .calendar-box .left {
@@ -36,7 +35,7 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;    
-    background-color: #009696;
+    background-color: #a6e7e5;
     margin-left: auto;
     margin-right:auto;
 }

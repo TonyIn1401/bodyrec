@@ -1,0 +1,13 @@
+<!--components/ruller.wxml-->
+
+<view class="ruller_view" id='rullerId'>
+
+  <scroll-view scroll-x scroll-with-animation='true' catchscroll="onScroll" bindscroll="onScroll">
+      <image  bindload="onImageLoad" style="width:{{ imageHistoryRect.width }}px; max-width:{{ imageHistoryRect.width }}px; height:{{ imageHistoryRect.height }}px;" src='{{rullerImgPath}}'></image>
+  </scroll-view>
+  <view class='pointer' style='height:{{ imageHistoryRect.height/2 }}px;'></view>
+</view>
+<view class='text_show'><text>{{currentValue}}</text></view>
+
+
+<canvas class="canvas_ruller" canvas-id="ruller" style="width:{{width}}px"></canvas>

@@ -1,4 +1,3 @@
-// miniprogram/pages/height/height.js
 Page({
 
   /**
@@ -10,13 +9,13 @@ Page({
         month: 'current',
         day: new Date().getDate(),
         color: 'white',
-        background: '#84e7d0'
+        background: '#a6e7e5'
       },
       {
         month: 'current',
         day: new Date().getDate(),
         color: 'white',
-        background: '#009696'
+        background: '#44b8b2'
       }
     ],
     curYear: new Date().getFullYear(), // 年份
@@ -25,6 +24,22 @@ Page({
     header_show: true, // 主标题是否显示
     prev: true, // 上一个月按钮是否显示
     next: true, // 下一个月按钮是否显示
+    value: 0,
+    val: 0,
+    value2: 0,
+    styles: [{
+      line: '#dbdbdb',
+      bginner: '#fbfbfb',
+      bgoutside: '#dbdbdb',
+      lineSelect: '#52b8f5',
+      font: '#404040'
+    }, {
+      line: '#dbdbdb',
+      bginner: '#fbfbfb',
+      bgoutside: '#dbdbdb',
+      lineSelect: '#52b8f5',
+      font: '#404040'
+    }]
   },
   //给点击的日期设置一个背景颜色
   dayClick: function(event) {
@@ -32,8 +47,7 @@ Page({
     let changeDay = `dayStyle[1].day`;
     let changeBg = `dayStyle[1].background`;
     this.setData({
-      [changeDay]: clickDay,
-      [changeBg]: "#009696",
+      [changeDay]: clickDay
     })
   },
   nextMonthClick: function(event){
@@ -53,14 +67,33 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    
 
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function() {
+  onReady: function (e) {
+    // 使用 wx.createContext 获取绘图上下文 context
+    var context = wx.createCanvasContext('firstCanvas')
 
+    context.setStrokeStyle("#00ff00")
+    context.setLineWidth(10)
+    context.rect(50, 100, 100, 100)
+    context.stroke()
+    context.setStrokeStyle("#ff0000")
+    context.setLineWidth(2)
+    context.moveTo(160, 100)
+    context.arc(100, 100, 60, 0, 2 * Math.PI, true)
+    context.moveTo(140, 100)
+    context.arc(100, 100, 40, 0, Math.PI, false)
+    context.moveTo(85, 80)
+    context.arc(80, 80, 5, 0, 2 * Math.PI, true)
+    context.moveTo(125, 80)
+    context.arc(120, 80, 5, 0, 2 * Math.PI, true)
+    context.stroke()
+    context.draw()
   },
 
   /**
@@ -103,5 +136,22 @@ Page({
    */
   onShareAppMessage: function() {
 
+  },
+  bindvalue: function (e) {
+    console.log(e.detail.value)
+    this.setData({
+      value: e.detail.value
+    })
+  },
+  bindvalue2: function (e) {
+    // console.log(e)
+    this.setData({
+      value2: e.detail.value
+    })
+  },
+  assignment() {
+    this.setData({
+      val: 50
+    })
   }
 })
